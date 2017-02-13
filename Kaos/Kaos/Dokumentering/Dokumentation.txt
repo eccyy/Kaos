@@ -1,7 +1,8 @@
 ﻿Vad?
 	En sida som monitorerar tågförseningar i enheten [ps] (p - personer, s - sekunder), där p är ett approximativt värde.
 	Antalet personer per avgång approximeras med hjälp av att kolla hur tätt avgångar sker.
-
+	Förseningarna ska hämtas från v1/stations/[ID]/transfers/arrivals.json, för alla ID, om <newArrival> har satts.
+	Förseningen per avgång är alltså (<arrival> - <newArrival>)
 
 Skriv scripten
 sida för att visa allt på
