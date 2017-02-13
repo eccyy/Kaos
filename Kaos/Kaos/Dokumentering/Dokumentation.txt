@@ -1,3 +1,6 @@
-﻿Skriv scripten
+﻿Vad?
+	En sida som monitorerar tågförseningar i enheten [ps] (p - personer, s - sekunder), där p är ett approximativt värde.
+
+Skriv scripten
 sida för att visa allt på
 Login sida? BAH!
