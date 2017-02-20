@@ -20,7 +20,7 @@
         </tr>
         <tr>
             <td>"Detta är ett annant test";</td>
-            <td>&nbsp;</td>
+            <td>"Hej Tommy"</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
