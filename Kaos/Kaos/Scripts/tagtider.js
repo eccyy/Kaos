@@ -1,3 +1,3 @@
-﻿$.ajax("http://api.tagtider.net/v1/", {
+﻿$.ajax("Någonstans här där det finns en server som kan kalla apin", {
     method: "GET",
 });
