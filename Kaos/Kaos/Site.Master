@@ -82,5 +82,10 @@
             </footer>
         </div>
     </form>
+    <p id="textBox"></p>
+
+    <button id="tagtiderButton">ASdasdasd</button>
+    <script src="Scripts/digestAuthRequest.js"></script>
+    <script src="Scripts/tagtider.js"></script>
 </body>
 </html>
