@@ -413,6 +413,7 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Tagtider.cs" />
     <Compile Include="Tag.aspx.cs">
       <DependentUpon>Tag.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

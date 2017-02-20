@@ -12,6 +12,7 @@
         
     </div>
     </form>
+    <%=json["stations"]["station"][0] %>
     <table style="width:50%;">
         <tr>
             <td>"Detta är ett test"</td>
