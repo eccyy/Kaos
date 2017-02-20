@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace Kaos
 {
-    public partial class Tag : System.Web.UI.Page
+    public partial class Tag : System.Web.UI.Page    
     {
 
 
@@ -28,6 +28,7 @@ namespace Kaos
         JsonSerializer jsGrej = new JsonSerializer();
         JsonReader jsReader;
         public dynamic json;
+        Stations datan;
         
         /*
          Om vi skulle vilja spara datan i ett vanligt objekt
@@ -53,9 +54,21 @@ namespace Kaos
             //Sparar datan i en "dynamisk", typ som en lista
             json = JsonConvert.DeserializeObject(streamReader.ReadToEnd());
 
+         
+          //  Tagtider saken = JsonConvert.DeserializeObject<Tagtider>(json.stations.station[0]);
+            
+                
 
+          //  datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
 
+            foreach (dynamic sak in json.stations.station)
+            {
+                index1.Items.Add((string)sak.name);
+            }
 
+           
         }
-    }
+
+        
+}
 }

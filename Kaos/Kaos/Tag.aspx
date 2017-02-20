@@ -11,24 +11,11 @@
     <div>
         
     </div>
+        <asp:DropDownList ID="index1" runat="server" Height="20px" style="margin-bottom: 0px">
+        </asp:DropDownList>
+        <asp:DropDownList ID="index2" runat="server">
+        </asp:DropDownList>
     </form>
-    <%=json["stations"]["station"][0] %>
-    <table style="width:50%;">
-        <tr>
-            <td>"Detta är ett test"</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>"Detta är ett annant test";</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>"Ett sista test"</td>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
+   
 </body>
 </html>
