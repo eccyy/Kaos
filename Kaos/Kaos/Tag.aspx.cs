@@ -19,32 +19,44 @@ namespace Kaos
          Om vi skulle vilja spara datan i ett vanligt objekt
          public List<RootObject> data; 
         */
-        ApiCaller apiCaller;
+        ApiCaller apiCallerStations;
+        ApiCaller apiCallerOperators;
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             //Knapp som visar alla stationer eller en lista där man får välja station
-
-            apiCaller = new ApiCaller("stations.json");
-
             //Tagtider saken = JsonConvert.DeserializeObject<Tagtider>(json.stations.station[0]);
-
             //ska kalla apicaller och göra logiken för att visa sakerna här
-            
-
             //datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
-            
-            
-            foreach (dynamic sak in apiCaller.json.stations.station)
+            //rtbText.SelectionFont = new Font(cmbFonts.Text, (int)numericUpDown1.Value);
+            //showStations();
+            showOperators();
+        }
+
+        private void showStations()
+        {
+            apiCallerStations = new ApiCaller("stations.json");
+
+            foreach (dynamic sak in apiCallerStations.json.stations.station)
             {
                 index1.Items.Add((string)sak.name);
             }
-            //rtbText.SelectionFont = new Font(cmbFonts.Text, (int)numericUpDown1.Value);
         }
 
-        
+        private void showOperators()
+        {
+            apiCallerOperators = new ApiCaller("operators.json");
 
-        
-}
+            foreach(dynamic sak in apiCallerOperators.json.operators["operator"])
+            {
+                index2.Items.Add((string)sak.name);
+            }
+        }
+
+        protected void Unnamed1_CheckedChanged(object sender, EventArgs e)
+        {
+            showStations();   
+        }
+    }
 }

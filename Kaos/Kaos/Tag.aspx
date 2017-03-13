@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tag.aspx.cs" Inherits="Kaos.Tag" %>
+﻿
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Tag.aspx.cs" Inherits="Kaos.Tag" %>
 
 <!DOCTYPE html>
 
@@ -11,6 +13,7 @@
     <div>
         
     </div>
+        <asp:radiobutton runat="server" ID="Operators" OnCheckedChanged="Unnamed1_CheckedChanged"></asp:radiobutton>
         <asp:DropDownList ID="index1" runat="server" Height="20px" style="margin-bottom: 0px">
         </asp:DropDownList>
         <asp:DropDownList ID="index2" runat="server" Height="20px" style="margin-bottom: 0px">
