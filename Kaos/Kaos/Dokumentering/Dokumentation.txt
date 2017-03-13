@@ -35,12 +35,15 @@ Jag ska göra en databas på RPI servern som jag har hemma. På denna server ska
 
 
 TomLogg
-Har gjort saker
+Har gjort saker. *Like*
 
 LucasLogg
+13/03
 1.Tag.aspx.cs initierar ApiCaller och tar json objektet (Just nu, alla stationer) från den samt sätter den i en lista.
 Problem: Hade inte initierat apiCaller, endast skapat en instans av klassen i Tag. 
-2.Ska göra så att man kan välja vad man vill visa 
+2.Gjorde så att den visar både stationer och opperatörer i varsin lista.
+Problem: Hade inte uppdaterat till jontes senaste version
+3.
 
 
 Lucas ska
