@@ -52,7 +52,8 @@ namespace Kaos
             var streamReader = new StreamReader(stream);
 
             //Sparar datan i en "dynamisk", typ som en lista
-            json = JsonConvert.DeserializeObject(streamReader.ReadToEnd());
+            json = JsonConvert.DeserializeObject(streamReader.ReadToEnd().ToString());
+            
 
          
           //  Tagtider saken = JsonConvert.DeserializeObject<Tagtider>(json.stations.station[0]);

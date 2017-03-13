@@ -1,6 +1,6 @@
 ﻿
 
-var url = 'http://api.tagtider.net/v1/stations.json';
+var url = 'http://api.tagtider.net/v1/stations.xml';
 
 $("#tagtiderButton").click(function 
     () {
