@@ -19,6 +19,7 @@ JonteLogg
 ApiCaller hämtar datan från servern med en digest authentication get. 
 Argument som tas emot är vilken fil som ska hämtas. Denna finns i konstruktorn. Efter att klassen har initieras finns en Dynamic som är public och där finns svaret från filen som skulle kallas. 
 Om sedan du vill uppdatera så ska du kalla ApiCaller.update();
+13/03
 
 
 
@@ -40,3 +41,5 @@ Göra väljaren som användaren använder för att välja vilka saker han vill s
 Delen som ska räkna ut förseningarna ich visa dem
 Efter användaren har valt vad den vill se ska en klass kallas som tar de värdena och visar den totala förseningstiden för dessa (stationer, län, land). 
 Dessa tider ska visas i Tag.aspx eller i en ny sida.
+
+Argument som användaren kan välja. 
