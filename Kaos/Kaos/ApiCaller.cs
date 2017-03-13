@@ -41,7 +41,7 @@ namespace Kaos
             req = WebRequest.Create(reqUrl);
             req.Method = "GET";
             req.PreAuthenticate = true;
-            req.Credentials = reqCred;
+            req.Credentials = reqCred; 
 
             // Hämtar datan
             stream = req.GetResponse().GetResponseStream();
