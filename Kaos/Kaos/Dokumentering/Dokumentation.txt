@@ -7,6 +7,7 @@
 Skriv scripten
 sida för att visa allt på
 Login sida? BAH!
+Ska visa hur många tåg som går just nu. 
 
 Arbetsuppgifter:
 Jonte ska göra kallningarna till APIn. All trafik som ska ut och in i projektet ska gå via jonte.
@@ -14,6 +15,10 @@ Jonte ska göra kallningarna till APIn. All trafik som ska ut och in i projektet
 Tommy ska göra sakerna efter att användaren skrivigt in vad de vill se. 
 
 Lucas ska göra så att användaren kan välja grejerna.
+
+
+
+
 
 LOGG
 pre-23/02/17
@@ -26,10 +31,11 @@ ApiCaller hämtar datan från servern med en digest authentication get.
 Argument som tas emot är vilken fil som ska hämtas. Denna finns i konstruktorn. Efter att klassen har initieras finns en Dynamic som är public och där finns svaret från filen som skulle kallas. 
 Om sedan du vill uppdatera så ska du kalla ApiCaller.update();
 13/03
+Jag ska göra en databas på RPI servern som jag har hemma. På denna server ska ett script köras med Crontab, alltså köras varje minut etc. Detta script ska kolla om updated på tagtider/stations.updated har ändrats för transfer med id id. Om det är så ska denna uppdateras. 
 
 
-
-
+TomLogg
+Har gjort saker
 
 LucasLogg
 1.Tag.aspx.cs initierar ApiCaller och tar json objektet (Just nu, alla stationer) från den samt sätter den i en lista.
@@ -39,7 +45,7 @@ Problem: Hade inte initierat apiCaller, endast skapat en instans av klassen i Ta
 
 Lucas ska
 Göra väljaren som användaren använder för att välja vilka saker han vill se. Förseningarna för sverige,ett län, en station, en linje, en tågKörare
-
+Kolla hur man gör event handling på klienten till servern
 
 
 Delen som ska räkna ut förseningarna ich visa dem
