@@ -40,9 +40,10 @@ namespace Kaos
             {
                 index1.Items.Add((string)sak.name);
             }
-            
-           
+            //rtbText.SelectionFont = new Font(cmbFonts.Text, (int)numericUpDown1.Value);
         }
+
+        
 
         
 }
