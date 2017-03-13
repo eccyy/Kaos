@@ -30,6 +30,8 @@ namespace Kaos
 
             //Sätter upp get anropet med digest
             reqCred.Add(new Uri(reqUrl), "Digest", new NetworkCredential("tagtider", "codemocracy"));
+
+            getThings();
         }
 
         private void getThings()
