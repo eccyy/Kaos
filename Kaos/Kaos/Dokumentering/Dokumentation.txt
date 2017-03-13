@@ -8,6 +8,12 @@ Skriv scripten
 sida för att visa allt på
 Login sida? BAH!
 
+Arbetsuppgifter:
+Jonte ska göra kallningarna till APIn. All trafik som ska ut och in i projektet ska gå via jonte.
+
+Tommy ska göra sakerna efter att användaren skrivigt in vad de vill se. 
+
+Lucas ska göra så att användaren kan välja grejerna.
 
 LOGG
 pre-23/02/17
