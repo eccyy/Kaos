@@ -31,12 +31,10 @@ Om sedan du vill uppdatera så ska du kalla ApiCaller.update();
 
 
 
-
-
 LucasLogg
 1.Tag.aspx.cs initierar ApiCaller och tar json objektet (Just nu, alla stationer) från den samt sätter den i en lista.
 Problem: Hade inte initierat apiCaller, endast skapat en instans av klassen i Tag. 
-2. Ska
+2.Ska göra så att man kan välja vad man vill visa 
 
 
 Lucas ska
