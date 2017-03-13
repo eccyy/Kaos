@@ -32,7 +32,13 @@ Argument som tas emot är vilken fil som ska hämtas. Denna finns i konstruktorn
 Om sedan du vill uppdatera så ska du kalla ApiCaller.update();
 13/03
 Jag ska göra en databas på RPI servern som jag har hemma. På denna server ska ett script köras med Crontab, alltså köras varje minut etc. Detta script ska kolla om updated på tagtider/stations.updated har ändrats för transfer med id id. Om det är så ska denna uppdateras. 
-
+Jag har hjälp lucas att hämta data och lägga i listboxar. Sedan har jag delegerat arbetsuppgifter.
+Jag har diskuterat med tommy om vad som ska visas, vad som ska sparas på databasen och hur. Kollat på datastrukturen från apin för att se vad vi kan visa.
+NÄSTA LEKTION
+	ska jag göra en databas på min Rpi server. Denna ska ha en struktur som tommy håller på att göra just nu. 
+	Sedan ska jag serverscriptsen som ska hämta, spara, uppdatera informationen på databasen. 
+	Detta kommer ske i PHP på webbservern och köras 1-2 gånger VARJE minut med hjälp av en schemaläggare, cron.
+	Dessutom måste jag göra kommunikationen mellan ASP servern och RPI servern. Denna kommunikation ska ske med Digest. Alltså gör jag en API till en API. 
 
 TomLogg
 Har gjort saker. *Like*
