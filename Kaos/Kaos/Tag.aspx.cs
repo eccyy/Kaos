@@ -30,7 +30,7 @@ namespace Kaos
             //ska kalla apicaller och göra logiken för att visa sakerna här
             //datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
             //rtbText.SelectionFont = new Font(cmbFonts.Text, (int)numericUpDown1.Value);
-            //showStations();
+            showStations();
             showOperators();
         }
 
