@@ -14,29 +14,34 @@ namespace Kaos
 {
     public partial class Tag : System.Web.UI.Page    
     {
-        
+
         /*
          Om vi skulle vilja spara datan i ett vanligt objekt
          public List<RootObject> data; 
         */
+        ApiCaller apiCaller;
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-         
-          //  Tagtider saken = JsonConvert.DeserializeObject<Tagtider>(json.stations.station[0]);
-            
-                
-            // ska kalla apicaller och göra logiken för att visa sakerna här
+            //Knapp som visar alla stationer eller en lista där man får välja station
 
-          //  datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
-          /*
-            foreach (dynamic sak in json.stations.station)
+            apiCaller = new ApiCaller("stations.json");
+
+            //Tagtider saken = JsonConvert.DeserializeObject<Tagtider>(json.stations.station[0]);
+
+            //ska kalla apicaller och göra logiken för att visa sakerna här
+            
+
+            //datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
+            
+            
+            foreach (dynamic sak in apiCaller.json.stations.station)
             {
                 index1.Items.Add((string)sak.name);
             }
-
-           */
+            
+           
         }
 
         

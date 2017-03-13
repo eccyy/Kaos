@@ -13,8 +13,9 @@
     </div>
         <asp:DropDownList ID="index1" runat="server" Height="20px" style="margin-bottom: 0px">
         </asp:DropDownList>
-        <asp:DropDownList ID="index2" runat="server">
+        <asp:DropDownList ID="index2" runat="server" Height="20px" style="margin-bottom: 0px">
         </asp:DropDownList>
+
     </form>
    
 </body>

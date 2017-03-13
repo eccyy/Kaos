@@ -13,7 +13,6 @@ namespace Kaos
 {
     public class ApiCaller
     {
-
         WebRequest req;
         Stream stream;
         CredentialCache reqCred = new CredentialCache();
@@ -36,8 +35,6 @@ namespace Kaos
 
         private void getThings()
         {
-           
-
             req = WebRequest.Create(reqUrl);
             req.Method = "GET";
             req.PreAuthenticate = true;
@@ -50,7 +47,6 @@ namespace Kaos
 
             //Sparar datan i en "dynamisk", typ som en lista
             json = JsonConvert.DeserializeObject(streamReader.ReadToEnd().ToString());
-
         }
 
     }
