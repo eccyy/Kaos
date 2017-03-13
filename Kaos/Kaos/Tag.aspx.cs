@@ -14,21 +14,6 @@ namespace Kaos
 {
     public partial class Tag : System.Web.UI.Page    
     {
-
-
-
-        
-        string reqUrl = "http://api.tagtider.net/v1/stations.json";
-       
-
-        WebRequest req;
-        Stream stream;
-        CredentialCache reqCred = new CredentialCache();
-        
-        JsonSerializer jsGrej = new JsonSerializer();
-        JsonReader jsReader;
-        public dynamic json;
-        Stations datan;
         
         /*
          Om vi skulle vilja spara datan i ett vanligt objekt
@@ -38,36 +23,20 @@ namespace Kaos
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Sätter upp get anropet med digest
-            reqCred.Add(new Uri(reqUrl), "Digest", new NetworkCredential("tagtider", "codemocracy"));
-
-            req = WebRequest.Create(reqUrl);
-            req.Method = "GET";
-            req.PreAuthenticate = true;
-            req.Credentials = reqCred;
-
-            // Hämtar datan
-            stream = req.GetResponse().GetResponseStream();
-
-            var streamReader = new StreamReader(stream);
-
-            //Sparar datan i en "dynamisk", typ som en lista
-            json = JsonConvert.DeserializeObject(streamReader.ReadToEnd().ToString());
-            
-
          
           //  Tagtider saken = JsonConvert.DeserializeObject<Tagtider>(json.stations.station[0]);
             
                 
+            // ska kalla apicaller och göra logiken för att visa sakerna här
 
           //  datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
-
+          /*
             foreach (dynamic sak in json.stations.station)
             {
                 index1.Items.Add((string)sak.name);
             }
 
-           
+           */
         }
 
         
