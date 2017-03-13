@@ -22,7 +22,8 @@ Om sedan du vill uppdatera så ska du kalla ApiCaller.update();
 
 
 
-
+Lucas ska
+Göra väljaren som användaren använder för att välja vilka saker han vill se. Förseningarna för sverige,ett län, en station, en linje, en tågKörare
 
 Delen som ska räkna ut förseningarna ich visa dem
 Efter användaren har valt vad den vill se ska en klass kallas som tar de värdena och visar den totala förseningstiden för dessa (stationer, län, land). 
