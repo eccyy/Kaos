@@ -26,7 +26,7 @@ ApiCaller hämtar datan från servern med en digest authentication get.
 Argument som tas emot är vilken fil som ska hämtas. Denna finns i konstruktorn. Efter att klassen har initieras finns en Dynamic som är public och där finns svaret från filen som skulle kallas. 
 Om sedan du vill uppdatera så ska du kalla ApiCaller.update();
 13/03
-
+Jag ska göra en databas på RPI servern som jag har hemma. På denna server ska ett script köras med Crontab, alltså köras varje minut etc. Detta script ska kolla om updated på tagtider/stations.updated har ändrats för transfer med id id. Om det är så ska denna uppdateras. 
 
 
 

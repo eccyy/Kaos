@@ -22,10 +22,13 @@ namespace Kaos
         public dynamic json;
         Stations datan;
         string reqUrl;
+        
 
         public ApiCaller(string file)
         {
-            reqUrl = "http://api.tagtider.net/v1/stations.json";
+
+            reqUrl = "http://api.tagtider.net/v1/";
+            reqUrl += file;
 
             //Sätter upp get anropet med digest
             reqCred.Add(new Uri(reqUrl), "Digest", new NetworkCredential("tagtider", "codemocracy"));
