@@ -13,8 +13,7 @@
     <div>
         
     </div>
-        <asp:radiobutton runat="server" ID="Operators" OnCheckedChanged="Unnamed1_CheckedChanged"></asp:radiobutton>
-        <asp:DropDownList ID="index1" runat="server" Height="20px" style="margin-bottom: 0px">
+        <asp:DropDownList ID="index1" runat="server" Height="20px" style="margin-bottom: 0px" OnSelectedIndexChanged="index1_SelectedIndexChanged">
         </asp:DropDownList>
         <asp:DropDownList ID="index2" runat="server" Height="20px" style="margin-bottom: 0px">
         </asp:DropDownList>
