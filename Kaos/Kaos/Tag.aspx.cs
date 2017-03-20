@@ -23,6 +23,8 @@ namespace Kaos
         ApiCaller apiCallerOperators;
         ApiCaller apiCallerTimes;
 
+        string stationID;
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -31,8 +33,9 @@ namespace Kaos
             //ska kalla apicaller och göra logiken för att visa sakerna här
             //datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
             //rtbText.SelectionFont = new Font(cmbFonts.Text, (int)numericUpDown1.Value);
-            ShowStations();
+            //ShowStations();
             //ShowOperators();
+            ShowTimes();
         }
 
         private void ShowStations()
@@ -57,7 +60,12 @@ namespace Kaos
 
         private void ShowTimes()
         {
-            apiCallerTimes = new ApiCaller("stations/");
+            apiCallerTimes = new ApiCaller("stations/243/transfers/departures.json");
+
+            foreach(dynamic sak in apiCallerTimes.json.station.transfers.transfer)
+            {
+                index2.Items.Add((string)sak.departure);
+            }
         }
     }
 }
