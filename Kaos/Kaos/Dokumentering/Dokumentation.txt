@@ -57,6 +57,13 @@ Problem
 NÄSTA LEKTION
 	Arbeta på TimeCalculator.cs mot sprint1. Diskutera integrering av serverns api som ska komma att utvecklas.
 
+20/03/17
+	Påbörjat DBStorer.cs och TimeCalculator.cs.
+Problem
+	Jag vet inte hur jag ska interagera med Jontes nonexistent databas. Thus vet jag inte hur jag ska implementera mina metoder.
+NÄSTA LEKTION
+	Jag tar med min rpi åt Jonte så han kan leka med. Hittar något annat att arbeta med för att vara konstruktiv.
+
 TardLogg
 13/03
 1.Tag.aspx.cs initierar ApiCaller och tar json objektet (Just nu, alla stationer) från den samt sätter den i en lista.

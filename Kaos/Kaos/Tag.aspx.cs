@@ -21,6 +21,9 @@ namespace Kaos
         */
         ApiCaller apiCallerStations;
         ApiCaller apiCallerOperators;
+        ApiCaller apiCallerTimes;
+
+        string stationID;
 
 
         protected void Page_Load(object sender, EventArgs e)
@@ -30,21 +33,22 @@ namespace Kaos
             //ska kalla apicaller och göra logiken för att visa sakerna här
             //datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
             //rtbText.SelectionFont = new Font(cmbFonts.Text, (int)numericUpDown1.Value);
-            showStations();
-            showOperators();
+            //ShowStations();
+            //ShowOperators();
+            ShowTimes();
         }
 
-        private void showStations()
+        private void ShowStations()
         {
             apiCallerStations = new ApiCaller("stations.json");
 
             foreach (dynamic sak in apiCallerStations.json.stations.station)
             {
-                index1.Items.Add((string)sak.name);
+                index1.Items.Add((string)sak.name + " " + (string)sak.id);
             }
         }
 
-        private void showOperators()
+        private void ShowOperators()
         {
             apiCallerOperators = new ApiCaller("operators.json");
 
@@ -54,9 +58,18 @@ namespace Kaos
             }
         }
 
-        protected void Unnamed1_CheckedChanged(object sender, EventArgs e)
+        private void ShowTimes()
         {
-            showStations();   
+            apiCallerTimes = new ApiCaller("stations/243/transfers/departures.json");
+
+            foreach (dynamic sak in apiCallerTimes.json.station.transfers.transfer)
+            {
+                TableRow row = new TableRow();
+                TableCell cell1 = new TableCell();
+                cell1.Text = (string)sak.departure;
+                row.Cells.Add(cell1);
+                table1.Rows.Add(row);
+            }
         }
     }
 }
