@@ -51,6 +51,9 @@ namespace Kaos
             //Sparar datan i en "dynamisk", typ som en lista
             json = JsonConvert.DeserializeObject(streamReader.ReadToEnd().ToString());
         }
-
+        public void update()
+        {
+            getThings();
+        }
     }
 }

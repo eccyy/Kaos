@@ -20,11 +20,15 @@ Lucas ska göra så att användaren kan välja grejerna.
 
 
 
-LOGG
+MASTERLOGG
 pre-23/02/17
 	Problem med att autensiera GET eftersom Digest används
 23/02/17
 	Autensieringsproblemet fixat med hjälp av NewtonsoftJS
+13/03/17
+	VAD HAR VI FÖR PROBLEM BOIS?
+
+
 
 JonteLogg
 ApiCaller hämtar datan från servern med en digest authentication get. 
@@ -32,12 +36,24 @@ Argument som tas emot är vilken fil som ska hämtas. Denna finns i konstruktorn
 Om sedan du vill uppdatera så ska du kalla ApiCaller.update();
 13/03
 Jag ska göra en databas på RPI servern som jag har hemma. På denna server ska ett script köras med Crontab, alltså köras varje minut etc. Detta script ska kolla om updated på tagtider/stations.updated har ändrats för transfer med id id. Om det är så ska denna uppdateras. 
-
+Jag har hjälp lucas att hämta data och lägga i listboxar. Sedan har jag delegerat arbetsuppgifter.
+Jag har diskuterat med tommy om vad som ska visas, vad som ska sparas på databasen och hur. Kollat på datastrukturen från apin för att se vad vi kan visa.
+NÄSTA LEKTION
+	ska jag göra en databas på min Rpi server. Denna ska ha en struktur som tommy håller på att göra just nu. 
+	Sedan ska jag serverscriptsen som ska hämta, spara, uppdatera informationen på databasen. 
+	Detta kommer ske i PHP på webbservern och köras 1-2 gånger VARJE minut med hjälp av en schemaläggare, cron.
+	Dessutom måste jag göra kommunikationen mellan ASP servern och RPI servern. Denna kommunikation ska ske med Digest. Alltså gör jag en API till en API. 
 
 TomLogg
-Har gjort saker. *Like*
+13/03/17
+	Arbetat fram en databasstruktur för att lagra datan i. Diskuterat lösningar för olika aspekter med integrering av 
+	användare, databas, server, och api. Smått påbörjat TimeCalculator.cs.
+Problem
+	Lite väl vag bild över hur olika delar ska sammarbeta.
+NÄSTA LEKTION
+	Arbeta på TimeCalculator.cs mot sprint1. Diskutera integrering av serverns api som ska komma att utvecklas.
 
-LucasLogg
+TardLogg
 13/03
 1.Tag.aspx.cs initierar ApiCaller och tar json objektet (Just nu, alla stationer) från den samt sätter den i en lista.
 Problem: Hade inte initierat apiCaller, endast skapat en instans av klassen i Tag. 
