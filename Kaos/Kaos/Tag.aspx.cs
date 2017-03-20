@@ -25,15 +25,6 @@ namespace Kaos
 
         string stationID;
 
-        // Total number of rows.
-        int rowCnt;
-        // Current row count.
-        int rowCtr;
-        // Total number of cells per row (columns).
-        int cellCtr;
-        // Current cell counter
-        int cellCnt;
-
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -53,7 +44,7 @@ namespace Kaos
 
             foreach (dynamic sak in apiCallerStations.json.stations.station)
             {
-                index1.Items.Add((string)sak.name);
+                index1.Items.Add((string)sak.name + " " + (string)sak.id);
             }
         }
 
