@@ -20,11 +20,15 @@ Lucas ska göra så att användaren kan välja grejerna.
 
 
 
-LOGG
+MASTERLOGG
 pre-23/02/17
 	Problem med att autensiera GET eftersom Digest används
 23/02/17
 	Autensieringsproblemet fixat med hjälp av NewtonsoftJS
+13/03/17
+	VAD HAR VI FÖR PROBLEM BOIS?
+
+
 
 JonteLogg
 ApiCaller hämtar datan från servern med en digest authentication get. 
@@ -41,7 +45,13 @@ NÄSTA LEKTION
 	Dessutom måste jag göra kommunikationen mellan ASP servern och RPI servern. Denna kommunikation ska ske med Digest. Alltså gör jag en API till en API. 
 
 TomLogg
-Har gjort saker. *Like*
+13/03/17
+	Arbetat fram en databasstruktur för att lagra datan i. Diskuterat lösningar för olika aspekter med integrering av 
+	användare, databas, server, och api. Smått påbörjat TimeCalculator.cs.
+Problem
+	Lite väl vag bild över hur olika delar ska sammarbeta.
+NÄSTA LEKTION
+	Arbeta på TimeCalculator.cs mot sprint1. Diskutera integrering av serverns api som ska komma att utvecklas.
 
 TardLogg
 13/03

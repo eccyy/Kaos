@@ -7,5 +7,6 @@ namespace Kaos
 {
     public class TimeCalculator
     {
+
     }
 }
