@@ -27,6 +27,10 @@ pre-23/02/17
 	Autensieringsproblemet fixat med hjälp av NewtonsoftJS
 13/03/17
 	VAD HAR VI FÖR PROBLEM BOIS?
+20/03/17
+	WOOTWTOO;
+	Varför asp.net :S 
+	Har en webbserver men vet inte hur man kopplar upp projektet med webbsidan. 
 
 
 
