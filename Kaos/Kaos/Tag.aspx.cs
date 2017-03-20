@@ -25,6 +25,15 @@ namespace Kaos
 
         string stationID;
 
+        // Total number of rows.
+        int rowCnt;
+        // Current row count.
+        int rowCtr;
+        // Total number of cells per row (columns).
+        int cellCtr;
+        // Current cell counter
+        int cellCnt;
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -62,9 +71,13 @@ namespace Kaos
         {
             apiCallerTimes = new ApiCaller("stations/243/transfers/departures.json");
 
-            foreach(dynamic sak in apiCallerTimes.json.station.transfers.transfer)
+            foreach (dynamic sak in apiCallerTimes.json.station.transfers.transfer)
             {
-                index2.Items.Add((string)sak.departure);
+                TableRow row = new TableRow();
+                TableCell cell1 = new TableCell();
+                cell1.Text = (string)sak.departure;
+                row.Cells.Add(cell1);
+                table1.Rows.Add(row);
             }
         }
     }
