@@ -43,7 +43,7 @@ NÄSTA LEKTION
 TomLogg
 Har gjort saker. *Like*
 
-LucasLogg
+TardLogg
 13/03
 1.Tag.aspx.cs initierar ApiCaller och tar json objektet (Just nu, alla stationer) från den samt sätter den i en lista.
 Problem: Hade inte initierat apiCaller, endast skapat en instans av klassen i Tag. 
