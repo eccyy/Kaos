@@ -23,6 +23,17 @@ namespace Kaos
         ApiCaller apiCallerOperators;
         ApiCaller apiCallerTimes;
 
+        string stationID;
+
+        // Total number of rows.
+        int rowCnt;
+        // Current row count.
+        int rowCtr;
+        // Total number of cells per row (columns).
+        int cellCtr;
+        // Current cell counter
+        int cellCnt;
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -31,8 +42,9 @@ namespace Kaos
             //ska kalla apicaller och göra logiken för att visa sakerna här
             //datan = JsonConvert.DeserializeObject<Stations>(json.stations.station);
             //rtbText.SelectionFont = new Font(cmbFonts.Text, (int)numericUpDown1.Value);
-            ShowStations();
+            //ShowStations();
             //ShowOperators();
+            ShowTimes();
         }
 
         private void ShowStations()
@@ -57,7 +69,16 @@ namespace Kaos
 
         private void ShowTimes()
         {
-            apiCallerTimes = new ApiCaller("stations/");
+            apiCallerTimes = new ApiCaller("stations/243/transfers/departures.json");
+
+            foreach (dynamic sak in apiCallerTimes.json.station.transfers.transfer)
+            {
+                TableRow row = new TableRow();
+                TableCell cell1 = new TableCell();
+                cell1.Text = (string)sak.departure;
+                row.Cells.Add(cell1);
+                table1.Rows.Add(row);
+            }
         }
     }
 }
